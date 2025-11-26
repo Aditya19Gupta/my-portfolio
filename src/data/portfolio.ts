@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 export const portfolioData = {
   personal: {
     name: "Aditya Gupta",
-    role: "Java Developer",
+    role: "Software Engineer",
     email: "adityacse207@gmail.com",
     phone: "+91 9794369680",
     location: "Gajpur, Gorakhpur, UP, India 273413",
