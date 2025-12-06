@@ -5,27 +5,27 @@ import { portfolioData } from "@/data/portfolio";
 
 
 export const skillIcon = {
-    MongoDB: "<a href='https://www.mongodb.com/' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg' width='80' height='80'/></a>",
-    Express: "<a href='https://expressjs.com' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg' width='80' height='80'/></a>",
-    "React.js": "<a href='https://reactjs.org/' target='_blank' rel='noreferrer'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' width='80' height='80'/></a>",
-    NodeJS: "<a href='https://nodejs.org' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg' width='80' height='80'/></a>",
-    "Next.js": "<a href='https://nextjs.org/' target='_blank' rel='noreferrer'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' width='80' height='80'/></a>",
-    Github: "<a href='https://git-scm.com/' target='_blank' rel='noreferrer'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' width='80' height='80'/></a>",
-    HTML: "<a href='https://www.w3.org/html/' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg' width='80' height='80'/></a>",
-    CSS: "<a href='https://www.w3schools.com/css/' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg' width='80' height='80'/></a>",
-    JavaScript: "<a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' width='80' height='80'/></a>",
-    Bootstrap: "<a href='https://getbootstrap.com' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg' width='80' height='80'/></a>",
-    TailwindCSS: "<a href='https://tailwindcss.com/' target='_blank' rel='noreferrer'><img src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg' width='80' height='80'/></a>",
-    "C++": "<a href='https://www.cplusplus.com/' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg' width='80' height='80'/></a>",
-    Firebase: "<a href='https://firebase.google.com/' target='_blank' rel='noreferrer'><img src='https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg' width='80' height='80'/></a>",
-    Java: "<a href='https://www.java.com' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg' width='80' height='80'/></a>",
-    MySQL: "<a href='https://www.mysql.com/' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg' width='80' height='80'/></a>",
-    Postman: "<a href='https://postman.com' target='_blank' rel='noreferrer'><img src='https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' width='80' height='80'/></a>",
-    Python: "<a href='https://www.python.org' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg' width='80' height='80'/></a>",
-    Redux: "<a href='https://redux.js.org' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg' width='80' height='80'/></a>",
-    Hibernate: "<a href='https://hibernate.org/' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-original.svg' width='80' height='80'/></a>",
-    SpringMVC: "<a href='https://spring.io/projects/spring-framework' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg' width='80' height='80'/></a>",
-    SpringBoot: "<a href='https://spring.io/projects/spring-boot' target='_blank' rel='noreferrer'><img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg' width='80' height='80'/></a>",
+    MongoDB: { href: 'https://www.mongodb.com/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg' },
+    Express: { href: 'https://expressjs.com', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg' },
+    "React.js": { href: 'https://reactjs.org/', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    NodeJS: { href: 'https://nodejs.org', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg' },
+    "Next.js": { href: 'https://nextjs.org/', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+    Github: { href: 'https://git-scm.com/', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+    HTML: { href: 'https://www.w3.org/html/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg' },
+    CSS: { href: 'https://www.w3schools.com/css/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg' },
+    JavaScript: { href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' },
+    Bootstrap: { href: 'https://getbootstrap.com', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg' },
+    TailwindCSS: { href: 'https://tailwindcss.com/', src: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg' },
+    "C++": { href: 'https://www.cplusplus.com/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg' },
+    Firebase: { href: 'https://firebase.google.com/', src: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg' },
+    Java: { href: 'https://www.java.com', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg' },
+    MySQL: { href: 'https://www.mysql.com/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg' },
+    Postman: { href: 'https://postman.com', src: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
+    Python: { href: 'https://www.python.org', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg' },
+    Redux: { href: 'https://redux.js.org', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg' },
+    Hibernate: { href: 'https://hibernate.org/', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-original.svg' },
+    SpringMVC: { href: 'https://spring.io/projects/spring-framework', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg' },
+    SpringBoot: { href: 'https://spring.io/projects/spring-boot', src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg' },
 };
 
 interface Skill {
@@ -76,29 +76,29 @@ export default function Skills() {
 
                         <div className="flex flex-wrap gap-3">
                             {portfolioData.skills.map((skill, index) => {
-                                const htmlString = skillIcon[skill as keyof typeof skillIcon];
-                                const parser = new DOMParser();
-                                const doc = parser.parseFromString(htmlString, "text/html");
-                                const anchor = doc.querySelector('a');
-                                const img = doc.querySelector('img');
+                                const skillData = skillIcon[skill as keyof typeof skillIcon];
 
-                                if (!anchor || !img) {
-                                    return null; // Or handle error
+                                if (!skillData) {
+                                    return null; // Skip if skill icon data not found
                                 }
-
-                                const href = anchor.getAttribute('href');
-                                const src = img.getAttribute('src');
-                                const alt = img.getAttribute('alt') || skill; // Use skill name as alt if not present
 
                                 return (
                                     <motion.div
                                         key={index}
                                         variants={item}
                                         className="rounded-lg cursor-default flex flex-col items-center p-2"
-                                    >   <div className="bg-black rounded-full p-2 border border-gray-200"><a href={href || '#'} target='_blank' rel='noreferrer'>
-                                        <img src={src || ''} alt={alt} className="rounded-full object-fit" width='80' height='80' />
-                                    </a></div>
-
+                                    >
+                                        <div className="bg-black rounded-full p-2 border border-gray-200">
+                                            <a href={skillData.href} target='_blank' rel='noreferrer'>
+                                                <img
+                                                    src={skillData.src}
+                                                    alt={skill}
+                                                    className="rounded-full object-fit"
+                                                    width='80'
+                                                    height='80'
+                                                />
+                                            </a>
+                                        </div>
                                         <p className="text-sm mt-2 text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">{skill}</p>
                                     </motion.div>
                                 );
@@ -111,25 +111,3 @@ export default function Skills() {
         </section>
     );
 }
-
-
-// <p align="left">
-// <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/></a>
-// <a href="https://expressjs.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></a>
-// <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/></a>
-// <a href="https://nodejs.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a>
-// <a href="https://nextjs.org/" target="_blank" rel="noreferrer"><img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/></a>
-// <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a>
-// <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></a>
-// <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a>
-// <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>
-// <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/></a>
-// <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/></a>
-// <a href="https://www.cplusplus.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/></a>
-// <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/></a>
-// <a href="https://www.java.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/></a>
-// <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/></a>
-// <a href="https://postman.com" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/></a>
-// <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a>
-// <a href="https://redux.js.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/></a>
-// </p>
