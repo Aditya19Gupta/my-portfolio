@@ -5,7 +5,7 @@ import { portfolioData } from "@/data/portfolio";
 
 export default function About() {
     return (
-        <section id="about" className="py-20 bg-white dark:bg-gray-900">
+        <section id="about" className="py-20 dark:bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -24,12 +24,12 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="relative"
+                        className="relative max-w-sm mx-auto md:mx-0"
                     >
                         <div className="aspect-square rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 relative z-10">
                             {/* Placeholder for profile image if available, otherwise using a gradient or pattern */}
                             <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-gray-400">
-                                <span className="text-6xl">AG</span>
+                                <span className="text-5xl">AG</span>
                             </div>
                         </div>
                         <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-blue-600 rounded-2xl z-0 hidden md:block"></div>

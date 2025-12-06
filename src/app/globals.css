@@ -8,11 +8,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #171717;
     --foreground: #ededed;
   }
 }
@@ -28,12 +29,15 @@ body {
   0% {
     transform: translate(0px, 0px) scale(1);
   }
+
   33% {
     transform: translate(30px, -50px) scale(1.1);
   }
+
   66% {
     transform: translate(-20px, 20px) scale(0.9);
   }
+
   100% {
     transform: translate(0px, 0px) scale(1);
   }
@@ -49,4 +53,8 @@ body {
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+.semi-transparent-bg {
+  background-color: rgba(10, 10, 10, 0.5);
 }

@@ -7,23 +7,11 @@ export const portfolioData = {
     email: "adityacse207@gmail.com",
     phone: "+91 9794369680",
     location: "Gajpur, Gorakhpur, UP, India 273413",
-    github: "https://github.com/aditya03gupta",
+    github: "https://github.com/Aditya19Gupta",
     summary:
       "I am currently engaged in Java development, with expertise in Spring Boot and frontend technologies. I am seeking a position as a Java Developer to gain industry experience and further enhance my technical skills.",
   },
-  skills: {
-    languages: ["Java", "JavaScript", "Python"],
-    technical: [
-      "OOPS",
-      "Java and DSA",
-      "Spring Boot",
-      "Spring MVC",
-      "Hibernate",
-      "MySQL",
-      "Git and Github",
-    ],
-    frontend: ["HTML", "CSS", "JS", "React.js", "Next.js"],
-  },
+  skills: ["Java", "JavaScript", "Python", "SpringBoot", "SpringMVC", "Hibernate", "MySQL", "Github", "HTML", "CSS", "JS", "React.js", "Next.js", "TailwindCSS"],
   experience: [
     {
       role: "Software Engineer",

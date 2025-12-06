@@ -9,17 +9,17 @@ const Scene3D = dynamic(() => import("./Scene3D"), { ssr: false });
 
 export default function Hero() {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
+        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden dark:bg-black">
             {/* 3D Scene Background */}
             <Scene3D />
 
             {/* Glassmorphism Container */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center ">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="backdrop-blur-sm bg-white/10 dark:bg-black/20 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl"
+                    className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl"
                 >
                     <h2 className="text-xl md:text-2xl font-medium text-blue-600 dark:text-blue-400 mb-4 tracking-wide uppercase">
                         Hello, I'm
@@ -46,7 +46,8 @@ export default function Hero() {
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            href="#" // Add resume link here
+                            href="/resume.pdf" // Add resume link here
+                            download
                             className="px-8 py-4 rounded-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md text-gray-900 dark:text-white font-bold border border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-gray-700 transition-all flex items-center gap-2 shadow-sm"
                         >
                             Download CV <Download size={20} />

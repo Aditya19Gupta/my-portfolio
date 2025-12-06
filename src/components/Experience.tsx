@@ -6,7 +6,7 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 export default function Experience() {
     return (
-        <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800">
+        <section id="experience" className="py-20 dark:bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ export default function Experience() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-white dark:bg-gray-900 rounded-2xl shadow-sm p-8 border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow"
+                            className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 rounded-2xl shadow-sm p-8 border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow"
                         >
                             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
                                 <div>

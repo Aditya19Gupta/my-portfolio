@@ -6,7 +6,7 @@ import { Github, ExternalLink } from "lucide-react";
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-20 bg-white dark:bg-gray-900">
+        <section id="projects" className="py-20 dark:bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ export default function Projects() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300"
+                            className="group bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300"
                         >
                             <div className="p-8">
                                 <div className="flex justify-between items-start mb-4">

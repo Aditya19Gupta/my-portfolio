@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
+        <section id="contact" className="py-20 dark:bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -81,7 +81,7 @@ export default function Contact() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg"
+                        className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 p-8 rounded-2xl shadow-lg"
                     >
                         <form className="space-y-6">
                             <div>
@@ -89,7 +89,7 @@ export default function Contact() {
                                 <input
                                     type="text"
                                     id="name"
-                                    className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
+                                    className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/50 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
                                     placeholder="Your Name"
                                 />
                             </div>
@@ -98,7 +98,7 @@ export default function Contact() {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
+                                    className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/50 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
                                     placeholder="your@email.com"
                                 />
                             </div>
@@ -107,7 +107,7 @@ export default function Contact() {
                                 <textarea
                                     id="message"
                                     rows={4}
-                                    className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
+                                    className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/50 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
                                     placeholder="Your message..."
                                 ></textarea>
                             </div>

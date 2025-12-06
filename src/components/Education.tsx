@@ -6,7 +6,7 @@ import { GraduationCap, Award } from "lucide-react";
 
 export default function Education() {
     return (
-        <section id="education" className="py-20 bg-white dark:bg-gray-900">
+        <section id="education" className="py-20 dark:bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export default function Education() {
 
                         <div className="space-y-6">
                             {/* Achievements */}
-                            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl">
+                            <div className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 p-6 rounded-2xl">
                                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Awards</h4>
                                 <ul className="space-y-3">
                                     {portfolioData.achievements.map((achievement, index) => (
@@ -77,7 +77,7 @@ export default function Education() {
                             </div>
 
                             {/* Training */}
-                            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl">
+                            <div className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 p-6 rounded-2xl">
                                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Certifications & Training</h4>
                                 <div className="space-y-4">
                                     {portfolioData.training.map((train, index) => (
