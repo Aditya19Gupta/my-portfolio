@@ -65,6 +65,51 @@ export const portfolioData = {
         "Full-Stack Development",
       ],
     },
+    {
+      name: "AI Video Generator",
+      github: "https://github.com/Aditya19Gupta",
+      live: "https://move37ventures.com/",
+      techStack: [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "AI/ML",
+        "REST API",
+        "JWT Authentication",
+      ],
+      description:
+        "A full-stack MERN application that leverages AI to generate videos from text prompts. Users can create, edit, and manage AI-generated video content with an intuitive interface and real-time processing capabilities.",
+      features: [
+        "AI-Powered Video Generation",
+        "User Authentication & Authorization",
+        "Real-time Video Processing",
+        "Video Management Dashboard",
+        "RESTful API Architecture",
+      ],
+    },
+    {
+      name: "Video Editing Platform",
+      github: "https://github.com/Aditya19Gupta",
+      live: "https://frontend-video-editing-app.vercel.app/",
+      techStack: [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Video.js",
+        "Canvas API",
+        "Web APIs",
+      ],
+      description:
+        "A modern frontend video editing platform that allows users to edit videos directly in the browser. Features include trimming, filters, transitions, text overlays, and real-time preview with a beautiful, responsive UI.",
+      features: [
+        "Browser-based Video Editing",
+        "Real-time Preview",
+        "Multiple Filters & Effects",
+        "Text Overlay & Transitions",
+        "Responsive Design",
+      ],
+    },
   ],
   education: [
     {

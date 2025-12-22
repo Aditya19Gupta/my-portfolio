@@ -35,11 +35,23 @@ export default function Projects() {
                                         {project.name}
                                     </h3>
                                     <div className="flex gap-2 sm:gap-3 ml-2">
+                                        {project.live && (
+                                            <a
+                                                href={project.live}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
+                                                title="Live Demo"
+                                            >
+                                                <ExternalLink size={18} className="sm:w-5 sm:h-5" />
+                                            </a>
+                                        )}
                                         <a
                                             href={project.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                                            title="GitHub Repository"
                                         >
                                             <Github size={18} className="sm:w-5 sm:h-5" />
                                         </a>

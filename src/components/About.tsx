@@ -1,9 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { portfolioData } from "@/data/portfolio";
+import { Code, Palette } from "lucide-react";
 
 export default function About() {
+    const javaSkills = ["Java", "SpringBoot", "SpringMVC", "Hibernate", "MySQL", "JPA", "REST API"];
+    const frontendSkills = ["React.js", "Next.js", "JavaScript", "HTML", "CSS", "TailwindCSS", "Redux"];
+
     return (
         <section id="about" className="py-20 dark:bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,43 +21,93 @@ export default function About() {
                     <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+                    {/* Java Developer Slide */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="relative max-w-xs sm:max-w-sm mx-auto md:mx-0"
+                        className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 rounded-2xl p-6 sm:p-8 md:p-10 border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300"
                     >
-                        <div className="aspect-square rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 relative z-10">
-                            {/* Placeholder for profile image if available, otherwise using a gradient or pattern */}
-                            <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center text-gray-400">
-                                <span className="text-4xl sm:text-5xl">AG</span>
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                                <Code className="text-white w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+                                Java Developer
+                            </h3>
+                        </div>
+                        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            I am currently engaged in Java development, with expertise in Spring Boot, Spring MVC, and Hibernate. 
+                            I specialize in building robust backend systems, RESTful APIs, and database management using MySQL.
+                        </p>
+                        <div className="mb-6">
+                            <h4 className="text-sm sm:text-base font-semibold text-gray-900 dark:text-white mb-3">Key Skills:</h4>
+                            <div className="flex flex-wrap gap-2">
+                                {javaSkills.map((skill, index) => (
+                                    <span
+                                        key={index}
+                                        className="px-3 py-1 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded-full text-xs sm:text-sm font-medium"
+                                    >
+                                        {skill}
+                                    </span>
+                                ))}
                             </div>
                         </div>
-                        <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-full h-full border-2 border-blue-600 rounded-2xl z-0 hidden md:block"></div>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
-                    >
-                        <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
-                            Passionate Java Developer & Frontend Enthusiast
-                        </h3>
-                        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4 sm:mb-6 leading-relaxed">
-                            {portfolioData.personal.summary}
-                        </p>
                         <div className="grid grid-cols-2 gap-3 sm:gap-4">
                             <div className="p-3 sm:p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                                 <h4 className="font-bold text-blue-600 text-lg sm:text-xl mb-1">02+</h4>
                                 <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Years Experience</p>
                             </div>
                             <div className="p-3 sm:p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <h4 className="font-bold text-blue-600 text-lg sm:text-xl mb-1">03+</h4>
+                                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Java Projects</p>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* Frontend Enthusiast Slide */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                        className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 rounded-2xl p-6 sm:p-8 md:p-10 border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300"
+                    >
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                                <Palette className="text-white w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+                                Frontend Enthusiast
+                            </h3>
+                        </div>
+                        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            Passionate about creating beautiful, responsive, and high-performance user interfaces. 
+                            I work with modern frameworks like React.js and Next.js, focusing on creating seamless user experiences.
+                        </p>
+                        <div className="mb-6">
+                            <h4 className="text-sm sm:text-base font-semibold text-gray-900 dark:text-white mb-3">Key Skills:</h4>
+                            <div className="flex flex-wrap gap-2">
+                                {frontendSkills.map((skill, index) => (
+                                    <span
+                                        key={index}
+                                        className="px-3 py-1 bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 rounded-full text-xs sm:text-sm font-medium"
+                                    >
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                            <div className="p-3 sm:p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <h4 className="font-bold text-purple-600 text-lg sm:text-xl mb-1">02+</h4>
+                                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Years Experience</p>
+                            </div>
+                            <div className="p-3 sm:p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                                 <h4 className="font-bold text-purple-600 text-lg sm:text-xl mb-1">05+</h4>
-                                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Projects Completed</p>
+                                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Frontend Projects</p>
                             </div>
                         </div>
                     </motion.div>

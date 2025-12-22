@@ -19,7 +19,7 @@ export default function Experience() {
                     <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
                 </motion.div>
 
-                <div className="space-y-8 sm:space-y-12">
+                <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-6">
                     {portfolioData.experience.map((exp, index) => (
                         <motion.div
                             key={index}
