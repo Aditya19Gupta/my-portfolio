@@ -19,7 +19,7 @@ export default function Experience() {
                     <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
                 </motion.div>
 
-                <div className="space-y-12">
+                <div className="space-y-8 sm:space-y-12">
                     {portfolioData.experience.map((exp, index) => (
                         <motion.div
                             key={index}
@@ -27,29 +27,29 @@ export default function Experience() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 rounded-2xl shadow-sm p-8 border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow"
+                            className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 rounded-2xl shadow-sm p-5 sm:p-6 md:p-8 border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow"
                         >
-                            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
-                                <div>
-                                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{exp.role}</h3>
-                                    <div className="text-xl text-blue-600 font-medium mb-2">{exp.company}</div>
+                            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 sm:mb-6 gap-3 md:gap-0">
+                                <div className="flex-1">
+                                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">{exp.role}</h3>
+                                    <div className="text-base sm:text-lg md:text-xl text-blue-600 font-medium mb-2 md:mb-0">{exp.company}</div>
                                 </div>
-                                <div className="flex flex-col gap-2 text-sm text-gray-500 dark:text-gray-400">
+                                <div className="flex flex-row md:flex-col gap-3 md:gap-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
                                     <div className="flex items-center gap-2">
-                                        <Calendar size={16} />
+                                        <Calendar size={14} className="sm:w-4 sm:h-4" />
                                         <span>{exp.duration}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <MapPin size={16} />
+                                        <MapPin size={14} className="sm:w-4 sm:h-4" />
                                         <span>{exp.location}</span>
                                     </div>
                                 </div>
                             </div>
 
-                            <ul className="space-y-3 mb-6">
+                            <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
                                 {exp.description.map((item, i) => (
-                                    <li key={i} className="flex items-start gap-3 text-gray-600 dark:text-gray-300">
-                                        <span className="mt-2 w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0"></span>
+                                    <li key={i} className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base text-gray-600 dark:text-gray-300">
+                                        <span className="mt-1.5 sm:mt-2 w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0"></span>
                                         <span className="leading-relaxed">{item}</span>
                                     </li>
                                 ))}
@@ -59,7 +59,7 @@ export default function Experience() {
                                 {exp.techStack.map((tech, i) => (
                                     <span
                                         key={i}
-                                        className="px-3 py-1 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded-full text-sm font-medium"
+                                        className="px-2 sm:px-3 py-1 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded-full text-xs sm:text-sm font-medium"
                                     >
                                         {tech}
                                     </span>

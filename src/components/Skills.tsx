@@ -64,17 +64,17 @@ export default function Skills() {
                     <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+                <div className="grid grid-cols-1 gap-6 sm:gap-8">
                     {/* Languages */}
                     <motion.div
                         variants={container}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true }}
-                        className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700"
+                        className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 p-5 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700"
                     >
 
-                        <div className="flex flex-wrap gap-3">
+                        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
                             {portfolioData.skills.map((skill, index) => {
                                 const skillData = skillIcon[skill as keyof typeof skillIcon];
 
@@ -88,18 +88,16 @@ export default function Skills() {
                                         variants={item}
                                         className="rounded-lg cursor-default flex flex-col items-center p-2"
                                     >
-                                        <div className="bg-black rounded-full p-2 border border-gray-200">
+                                        <div className="bg-black rounded-full p-1.5 sm:p-2 border border-gray-200">
                                             <a href={skillData.href} target='_blank' rel='noreferrer'>
                                                 <img
                                                     src={skillData.src}
                                                     alt={skill}
-                                                    className="rounded-full object-fit"
-                                                    width='80'
-                                                    height='80'
+                                                    className="rounded-full object-fit w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
                                                 />
                                             </a>
                                         </div>
-                                        <p className="text-sm mt-2 text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">{skill}</p>
+                                        <p className="text-xs sm:text-sm mt-2 text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">{skill}</p>
                                     </motion.div>
                                 );
                             })}
