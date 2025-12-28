@@ -2,10 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Code, Palette } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
     const javaSkills = ["Java", "SpringBoot", "SpringMVC", "Hibernate", "MySQL", "JPA", "REST API"];
-    const frontendSkills = ["React.js", "Next.js", "JavaScript", "HTML", "CSS", "TailwindCSS", "Redux"];
+    const frontendSkills = ["React.js", "Next.js", "JavaScript", "HTML", "CSS", "TailwindCSS", "Redux", "Node.js", "Express.js", "MongoDB", "PostGresSQL"];
 
     return (
         <section id="about" className="py-20 dark:bg-black">
@@ -31,15 +32,21 @@ export default function About() {
                         className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 rounded-2xl p-6 sm:p-8 md:p-10 border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300"
                     >
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                                <Code className="text-white w-6 h-6" />
+                            <div className="w-12 h-12 rounded-full flex items-center justify-center">
+                                <Image
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                                    alt="Java"
+                                    width={48}
+                                    height={48}
+                                    className="-mt-3"
+                                />
                             </div>
                             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
                                 Java Developer
                             </h3>
                         </div>
                         <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                            I am currently engaged in Java development, with expertise in Spring Boot, Spring MVC, and Hibernate. 
+                            I am currently engaged in Java development, with expertise in Spring Boot, Spring MVC, and Hibernate.
                             I specialize in building robust backend systems, RESTful APIs, and database management using MySQL.
                         </p>
                         <div className="mb-6">
@@ -76,16 +83,22 @@ export default function About() {
                         className="bg-white/80 backdrop-blur-md shadow-md dark:bg-neutral-950/80 rounded-2xl p-6 sm:p-8 md:p-10 border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300"
                     >
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
-                                <Palette className="text-white w-6 h-6" />
+                            <div className="w-12 h-12 rounded-full flex items-center justify-center">
+                                <Image
+                                    src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+                                    alt="React"
+                                    width={48}
+                                    height={48}
+                                    className="-mt-3"
+                                />
                             </div>
                             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-                                Frontend Enthusiast
+                                Full Stack(MERN) Enthusiast
                             </h3>
                         </div>
                         <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                            Passionate about creating beautiful, responsive, and high-performance user interfaces. 
-                            I work with modern frameworks like React.js and Next.js, focusing on creating seamless user experiences.
+                            Passionate about creating beautiful, responsive, and high-performance user interfaces.
+                            I work with modern frameworks like React.js, Next.js, Node.js, Express.js, focusing on creating seamless user experiences.
                         </p>
                         <div className="mb-6">
                             <h4 className="text-sm sm:text-base font-semibold text-gray-900 dark:text-white mb-3">Key Skills:</h4>
