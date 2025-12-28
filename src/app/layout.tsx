@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Adity Gupta",
   description: "Adity Gupta portfolio.",
+  icons: "/rocket.png",
 };
 
 export default function RootLayout({
